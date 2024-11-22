@@ -35,7 +35,17 @@
   docker-compose up -d
 ```
 
-6. Levantar: ``` npm run start:dev ```
+6. Endpoint
+```
+PATCH
+/applications/documentation/{id}
+```
+```
+PATCH
+/applications/documentation-code/{id}
+```
+
+7. Levantar: ``` npm run start:dev ```
 
 
 
