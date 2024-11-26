@@ -18,9 +18,9 @@ import { RviaprodocModule } from './rviaprodoc/rviaprodoc.module';
       autoLoadEntities: true,
       synchronize:false
     }),
-    RviaprodocModule,    
+    //RviaprodocModule,    
   ],
-  controllers: [RviaprodocController],
-  providers: [ConfigService, RviaprodocService],
+  controllers: [],
+  providers: [ConfigService],
 })
 export class AppModule {}

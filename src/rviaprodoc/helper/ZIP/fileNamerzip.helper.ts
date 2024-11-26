@@ -1,4 +1,6 @@
 import { v4 as uuid } from 'uuid'
+import { Request, Response } from 'express';
+import * as multer from 'multer';
 
 export const fileNamerZip = ( req: Express.Request, file: Express.Multer.File, callback: Function ) => {
 

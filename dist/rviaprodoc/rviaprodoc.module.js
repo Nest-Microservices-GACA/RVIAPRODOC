@@ -12,6 +12,10 @@ let RviaprodocModule = class RviaprodocModule {
 };
 exports.RviaprodocModule = RviaprodocModule;
 exports.RviaprodocModule = RviaprodocModule = __decorate([
-    (0, common_1.Module)({})
+    (0, common_1.Module)({
+        imports: [
+            RviaprodocModule
+        ]
+    })
 ], RviaprodocModule);
 //# sourceMappingURL=rviaprodoc.module.js.map

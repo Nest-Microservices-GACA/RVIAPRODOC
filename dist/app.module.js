@@ -11,9 +11,6 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const config_1 = require("./config");
 const config_2 = require("@nestjs/config");
-const rviaprodoc_controller_1 = require("./rviaprodoc/rviaprodoc.controller");
-const rviaprodoc_service_1 = require("./rviaprodoc/rviaprodoc.service");
-const rviaprodoc_module_1 = require("./rviaprodoc/rviaprodoc.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -30,10 +27,9 @@ exports.AppModule = AppModule = __decorate([
                 autoLoadEntities: true,
                 synchronize: false
             }),
-            rviaprodoc_module_1.RviaprodocModule,
         ],
-        controllers: [rviaprodoc_controller_1.RviaprodocController],
-        providers: [config_2.ConfigService, rviaprodoc_service_1.RviaprodocService],
+        controllers: [],
+        providers: [config_2.ConfigService],
     })
 ], AppModule);
 //# sourceMappingURL=app.module.js.map

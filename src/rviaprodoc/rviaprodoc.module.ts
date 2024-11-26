@@ -1,4 +1,8 @@
 import { Module } from '@nestjs/common';
 
-@Module({})
+@Module({
+    imports:[
+        RviaprodocModule
+    ]
+})
 export class RviaprodocModule {}
