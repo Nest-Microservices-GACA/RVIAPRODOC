@@ -1,8 +1,7 @@
 import { Transform } from "class-transformer";
 import { IsIn, IsNumber } from "class-validator";
 
-export class CreateDocumentationCodigo {
-
+export class CreateDocumentationCodDto {
     @IsNumber()
     @Transform(({ value }) => parseInt(value, 10))
     @IsIn([2], {
@@ -10,4 +9,8 @@ export class CreateDocumentationCodigo {
     })
     opcArquitectura: number;
 
-} 
+    constructor() {
+        this.opcArquitectura = 2; 
+    }
+
+}
